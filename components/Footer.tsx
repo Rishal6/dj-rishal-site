@@ -40,7 +40,7 @@ export function Footer() {
               <Mail size={16} aria-hidden="true" />
               {booking.email}
             </a>
-            <a className="inline-flex items-center gap-2 transition hover:text-lime-200" href={`tel:${booking.phone}`}>
+            <a className="inline-flex items-center gap-2 transition hover:text-lime-200" href={`tel:${booking.phoneHref}`}>
               <Phone size={16} aria-hidden="true" />
               {booking.phone}
             </a>

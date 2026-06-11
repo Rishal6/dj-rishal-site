@@ -7,7 +7,8 @@ export const booking = {
   instagram: "https://www.instagram.com/dj_rishal/",
   instagramLabel: "@dj_rishal",
   email: process.env.NEXT_PUBLIC_BOOKING_EMAIL || "bookings@example.com",
-  phone: process.env.NEXT_PUBLIC_BOOKING_PHONE || "+91-00000-00000"
+  phone: process.env.NEXT_PUBLIC_BOOKING_PHONE || "+91 98650 48915",
+  phoneHref: "+919865048915"
 };
 
 export const brand = {
@@ -321,6 +322,7 @@ export function localBusinessSchema() {
     description: brand.summary,
     url: absoluteUrl("/"),
     image: absoluteUrl("/images/dj-rishal-hero-generated.png"),
+    telephone: booking.phoneHref,
     areaServed: ["Chennai", "Pondicherry", "Tamil Nadu"],
     sameAs: [booking.instagram],
     knowsAbout: [

@@ -45,7 +45,7 @@ export default function ContactPage() {
                 icon: Phone,
                 label: "Phone",
                 value: booking.phone,
-                href: `tel:${booking.phone}`
+                href: `tel:${booking.phoneHref}`
               }
             ].map((item) => (
               <a
