@@ -1,0 +1,3 @@
+:HL["/dj-rishal-site/_next/static/chunks/0-45-o368r8kt.css","style"]
+:HL["/dj-rishal-site/images/dj-rishal-hero-generated.png","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"about-dj-rishal","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"S8nnV_vyURMPEEM2iRA1V"}

@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://rishal6.github.io
+Sitemap: https://rishal6.github.io/dj-rishal-site/sitemap.xml
