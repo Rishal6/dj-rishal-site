@@ -147,14 +147,14 @@ export function generateRecommendations(profile: ClientProfile): GeoRecommendati
       agent: "Comparison Agent",
       task: `Create ethical comparison/alternative pages against ${profile.competitors.slice(0, 2).join(" and ")}`,
       reason: "Comparison and alternative queries are high-conversion prompts where competitors often dominate.",
-      output: "Truthful comparison pages that avoid fake claims and focus on service fit, proof, and booking context."
+      output: "Truthful comparison pages that focus on service fit, proof, and booking context."
     }
   ];
 }
 
 export function calculateScorecard(profile: ClientProfile) {
   const promptCoverage = Math.min(100, generatePersonalizedPrompts(profile).length * 3);
-  const proofStrength = Math.min(100, profile.proofAvailable.length * 18 + profile.proofNeeded.length * 4);
+  const proofStrength = Math.max(0, Math.min(100, 30 + profile.proofAvailable.length * 15 - profile.proofNeeded.length * 6));
   const sourceStrength = Math.min(100, getDomainTemplate(profile.domain).trustedSources.length * 16);
   const visibilityScore = Math.round(promptCoverage * 0.35 + proofStrength * 0.35 + sourceStrength * 0.3);
 
