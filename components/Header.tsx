@@ -8,6 +8,8 @@ const nav = [
   { href: "/wedding-dj-chennai", label: "Weddings" },
   { href: "/corporate-event-dj-chennai", label: "Corporate" },
   { href: "/events", label: "Events" },
+  { href: "/geo-system", label: "GEO System" },
+  { href: "/geo-report", label: "Report" },
   { href: "/contact", label: "Contact" }
 ];
 
